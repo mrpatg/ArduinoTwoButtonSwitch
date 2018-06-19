@@ -37,7 +37,7 @@ void loop() {
   buttonStateChaseGreen = digitalRead(buttonChaseGreen);
   buttonStateChaseBlue = digitalRead(buttonChaseBlue);
 
-  if (buttonStateChaseGreen == HIGH && buttonStateChase == LOW) {
+  if (buttonStateChaseGreen == HIGH && buttonStateChaseBlue == LOW) {
     theaterChase(strip.Color(0, 127, 0), 50); // Green
 
   } else if (buttonStateChaseBlue == HIGH && buttonStateChaseGreen == LOW) {
